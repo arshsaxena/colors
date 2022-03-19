@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <title>Colors by Arsh</title>
+
+    <meta name="description" content="Namaste. This is a very simple and free Weather app by Arsh. Find out the current temperature, feels like temperature, minimum temperature, maximum temperature, clouds cover, pressure, humidity, wind speed, and wind direction of any place.">
+    <meta name="author" content="Arsh Saxena">
+    <meta name="keywords" content="Arsh Saxena, arsh.saxena02, GitHub, Coding, Indian, Student, colors, rgb, rgba, opacity, alpha, hex, hexadecimal, random, genenrator">
+    
+    <link rel="stylesheet" href="/pages/first-page/style.css">
+    <link rel="stylesheet" href="/pages/globals/global-fonts.css">
+    <link rel="stylesheet" href="/pages/globals/global-navbar/global-navbar.css">
+    <link rel="stylesheet" href="/pages/globals/global-footer/global-footer.css">
+    <link rel="stylesheet" href="/pages/globals/global-scrollbar.css">
+    <link rel="stylesheet" href="/pages/globals/global-top-button/global-top-button.css">
+    <link rel="stylesheet" href="/pages/globals/global-preloader/global-preloader.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <meta name="theme-color" content="#1d1d1f">
+    <meta name="msapplication-navbutton-color" content="#1d1d1f">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#1d1d1f">
+
+    <link rel="icon" href="/resources/first-page/icons/color-picker.png">
+    <link rel="apple-touch-icon" href="./resources/first-page/icons/color-picker.png">
+</head>
+<body>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+        $(function(){
+        $("#nav").load("/pages/globals/global-navbar/global-navbar.html"); 
+        $("#footer").load("/pages/globals/global-footer/global-footer.html");
+        $("#top-button").load("/pages/globals/global-top-button/global-top-button.html");
+        });
+    </script>
+    <div class="container" id="container">
+        <span id="top-button"></span>
+        <nav class="nav" id="nav"> 
+        </nav>
+        <noscript>Please enable JavaScript!</noscript>
+        <div class="main-head">
+            <div class="controls">
+                <p class="heading"><b>Colors by Arsh</b></p>
+                <div class="buttons-div">
+                    <button id="hexBtn" class="colorgen-button" onclick="getHexColorCode()"><b>Hex</b></button>
+                    <button id="rgbBtn" class="colorgen-button" onclick="getRGBColorCode()"><b>RGB</b></button>
+                    <button id="rgbaBtn" class="colorgen-button" onclick="getRGBAColorCode()"><b>RGBA</b></button>
+                </div>
+                <input class="color-code" id="code" value="#000000"></input>
+                <br>
+                <button id="enterBtn" class="enter-button" onclick="inputColor()"><b>ENTER</b></button>
+            </div>
+            <div class="instructions">
+                <p>
+                    To generate a random color, click on “Hex”, “RGB”, or “RGBA” buttons.
+                </p>
+                <p>
+                    To get color from Hex, RGB, or RGBA code, enter or paste the code in input field, and hit ENTER.
+                </p>
+            </div>
+        </div>
+        <script src="/pages/first-page/script.js"></script>
+        <span class="footer-conatiner">
+            <footer>
+                <div class="footer" id="footer-part">
+                    <div class="footnote">
+                        Favicon: <a href="https://www.pngwing.com/en/free-png-djwxe/download" target="_blank">PNGWing</a>
+                    </div>
+                    <div class="footer-text">
+                        <img src="/resources/first-page/icons/arsh.png" alt="arsh-img-footer">
+                        <span class="path">
+                            <span class="arrow"><i class="fa fa-angle-right"></i></span>
+                        </span> 
+                        <img src="/resources/first-page/icons/color-picker.png" alt="weather-img-footer">
+                        <span class="path">
+                            <span class="page-name">&nbsp;Colors by Arsh</span>
+                        </span>                 
+                    </div>
+                </div>
+            </footer>
+            <footer id="footer"></footer>
+        </span>
+    </div>
+</body>
+</html>

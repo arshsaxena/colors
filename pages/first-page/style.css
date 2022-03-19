@@ -1,0 +1,223 @@
+html{
+    background-color: #1d1d1f;
+}
+body {
+    height: 100%;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:  black;
+    font-family: font-regular;
+    color: white;
+}
+.main-head a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+    z-index: 99999999999;
+}
+nav{
+    width: 100%;
+    margin: 0;
+}
+.main-head {
+    width: fit-content;
+    margin: 40px auto;
+    padding: 0px;
+    border-radius: 20px;
+    text-align: center;
+}
+.controls{
+    background-color: rgba(255, 255, 255, 0.356);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 20px;
+}
+.heading{
+    font-size: 30px;
+    margin: 0;
+    padding: 10px;
+    color: #1d1d1fda;
+    background-color: #1d1d1f81;
+    color: white;
+    border-radius: 15px;
+}
+.buttons-div{
+    margin: 20px 0 10px;
+}
+.colorgen-button {
+    width: 100px;
+    font-family: font-regular;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px 17px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    color: #1d1d1f;
+    border: 2px solid #1d1d1f81;
+    border-radius: 50px;
+}
+.colorgen-button:hover{
+    background-color: #1d1d1f81;
+    color: white;
+    border: 2px solid #1d1d1f81;
+}
+.colorgen-button:nth-of-type(1){
+    margin-right: 2.5px;
+}
+.colorgen-button:nth-of-type(2){
+    margin: initial 2.5px;
+}
+.colorgen-button:nth-of-type(3){
+    margin-left: 2.5px;
+    margin-bottom: 0;
+}
+.color-code {
+    font-family: font-regular;
+    width: 300px;
+    margin: 0 auto;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #1d1d1f81;
+    color: white;
+    border-radius: 15px;
+    border: none;
+}
+.enter-button{
+    cursor: pointer;
+    width: 100%;
+    font-family: font-regular;
+    font-size: 20px;
+    padding: 5px 17px;
+    margin-top: 10px;
+    color: white;
+    background-color: #007aff;
+    border: none;
+    border-radius: 15px;
+}
+.enter-button:hover{
+    background-color: #006cdf;
+}
+.instructions{
+    background-color: rgba(255, 255, 255, 0.356);
+    margin: 10px auto 0;
+    border-radius: 20px;
+    width: 350px;
+    text-align: left;
+    font-size: 15px;
+    line-height: 18px;
+    color: #1d1d1f;
+}
+.instructions p{
+    padding: 10px 15px;
+}
+.instructions p:first-of-type{
+    padding-bottom: 0px;
+}
+.instructions p:last-of-type{
+    padding-top: 0;
+}
+.footnote {
+    padding-bottom: 10px;
+    border-bottom: solid;
+    border-color: rgb(81, 81, 84);
+    border-width: 1px;
+    font-size: 14px;
+}
+.footnote a {
+    color: #226eb6;
+}
+.footnote a:hover{
+    text-decoration: underline;
+}
+.footer-text {
+    padding-top: 15px;
+}
+
+@media screen and (max-width: 400px) {
+    html{
+        background-color: #1d1d1f;
+        margin: 0px;
+        padding: 0px;
+    }
+    body{
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+    .main-head{
+        display: block;
+        max-width: 980px;
+        width: 90% !important;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .controls{
+        background-color: rgba(255, 255, 255, 0.356);
+        width: fit-content;
+        margin: 0 auto;
+        padding: 10px 10px;
+        border-radius: 20px;
+    }
+    .heading{
+        font-size: 25px;
+    }
+    .buttons-div{
+        margin: 20px 20px 20px;
+    }
+    .colorgen-button:hover{
+        background-color: transparent;
+        color: #1d1d1f;
+        border: 2px solid #1d1d1f81;
+    }
+    .colorgen-button:focus {
+        background-color: #1d1d1f81;
+        color: white;
+        border: 2px solid #1d1d1f81;
+    }
+    .color-code {
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px;
+        font-size: 20px;
+        text-align: center;
+        background-color: #1d1d1f81;
+        color: white;
+        border-radius: 15px;
+    }
+    .enter-button{
+        cursor: pointer;
+        width: 100%;
+        font-family: font-regular;
+        font-size: 20px;
+        padding: 10px 17px;
+        margin-top: 10px;
+        color: white;
+        background-color: #007aff;
+        border: none;
+        border-radius: 15px;
+    }
+    .enter-button:hover{
+        background-color: #007aff;
+    }
+    .enter-button:focus{
+        background-color: #006cdf;
+    }
+    .instructions{
+        background-color: rgba(255, 255, 255, 0.356);
+        border-radius: 20px;
+        max-width: 350px;
+        width: 100%;
+        text-align: left;
+        font-size: 15px;
+        line-height: 18px;
+        color: #1d1d1f;
+    }
+}
